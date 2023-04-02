@@ -1,0 +1,10 @@
+{% extends 'authentication/base.html' %}
+{% block content %}
+   <center>
+    <h2>{{ blog.title }}</h2>
+    
+    <img src="{{ blog.photo.image.url}}">
+    <p>{{ blog.photo.caption }}</p>
+    <p>{{ blog.content }}</p>
+</center>
+{% endblock content %}
